@@ -2,10 +2,10 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "environmentName": {
-            "type": "string",
-            "defaultValue": "AzureUSGovernment"
-        },
+      "environmentName": {
+        "type": "string",
+        "defaultValue": "AzureCloud"
+      },
         "adminUsername": {
             "type": "string",
             "metadata": {
@@ -120,14 +120,14 @@
             }
         },
 
-        "omsWorkspaceRegion": {
-            "type": "string",
-            "defaultValue": "USGov Virginia",
-            "allowedValues": ["USGov Virginia", "East US", "West Europe", "Southeast Asia", "Australia Southeast"],
-            "metadata": {
-                "description": "Specify the region for your Workspace"
-            }
-        },
+      "omsWorkspaceRegion": {
+        "type": "string",
+        "defaultValue": "East US",
+        "allowedValues": [ "USGov Virginia", "East US", "West Europe", "Southeast Asia", "Australia Southeast" ],
+        "metadata": {
+          "description": "Specify the region for your Workspace"
+        }
+      },
         "serviceTier": {
             "type": "string",
             "allowedValues": [
@@ -668,28 +668,28 @@
             },
             "defaultValue": "autohav2VNET"
         },
-        "templatesBaseUrl": {
-            "type": "string",
-            "metadata": {
-                "description": "Linked Templates base url"
-            },
-            "defaultValue": "https://raw.githubusercontent.com/AppliedIS/azure-blueprint/master/nestedtemplates"
+      "templatesBaseUrl": {
+        "type": "string",
+        "metadata": {
+          "description": "Linked Templates base url"
         },
-        "dscBaseUrl": {
-            "type": "string",
-            "metadata": {
-                "description": "DSC Scripts base url"
-            },
-            "defaultValue": "https://raw.githubusercontent.com/AppliedIS/azure-blueprint/master/DSC"
+        "defaultValue": "https://raw.githubusercontent.com/manishkumar-agarwal/AzureBPCommercial/master/nestedtemplates"
+      },
+      "dscBaseUrl": {
+        "type": "string",
+        "metadata": {
+          "description": "DSC Scripts base url"
         },
-        "scriptsBaseUrl": {
-            "type": "string",
-            "metadata": {
-                "description": "DSC Scripts base url"
-            },
+        "defaultValue": "https://raw.githubusercontent.com/manishkumar-agarwal/AzureBPCommercial/master/DSC"
+      },
+      "scriptsBaseUrl": {
+        "type": "string",
+        "metadata": {
+          "description": "DSC Scripts base url"
+        },
 
-            "defaultValue": "https://raw.githubusercontent.com/AppliedIS/azure-blueprint/master/postdeploy"
-        },
+        "defaultValue": "https://raw.githubusercontent.com/manishkumar-agarwal/AzureBPCommercial/master/postdeploy"
+      },
         "sqlServerVersion": {
             "type": "string",
             "allowedValues": [
