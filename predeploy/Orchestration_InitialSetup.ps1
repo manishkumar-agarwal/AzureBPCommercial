@@ -28,7 +28,7 @@ $azurePassword = Read-Host -assecurestring "Enter your Azure password"
 try {
 	$AzureAuthCreds = New-Object System.Management.Automation.PSCredential -ArgumentList @($azureUserName,$azurePassword)
 	$azureEnv = Get-AzureRmEnvironment -Name $EnvironmentName
-  Login-AzureRmAccount -EnvironmentName "AzureUSGovernment" -Credential $AzureAuthCreds
+  Login-AzureRmAccount -EnvironmentName "AzureCloud" -Credential $AzureAuthCreds
 } catch {
 	Throw "Your credentials are incorrect or invalid. Make sure you are using your Azure Government account information"
 }
