@@ -266,7 +266,7 @@
                     "osDisk": {
                         "name": "osdisk",
                         "vhd": {
-                            "uri": "[concat('http://',parameters('WebStorageAccountName'),'.blob.core.usgovcloudapi.net/',parameters('vmContainerName'),'/',parameters('WebVMName'), copyindex(), '-osdisk.vhd')]"
+                            "uri": "[concat('http://',parameters('WebStorageAccountName'),'.blob.core.windows.net/',parameters('vmContainerName'),'/',parameters('WebVMName'), copyindex(), '-osdisk.vhd')]"
                         },
                         "caching": "ReadWrite",
                         "createOption": "FromImage"
