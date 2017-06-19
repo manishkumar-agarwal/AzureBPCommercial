@@ -104,9 +104,9 @@ function checkPasswords
 function orchestration
 {
 	Param(
-		[string]$environmentName = "AzureUSGovernment",
-		[string]$location = "USGov Virginia",
-		[string]$recoveryServicesAADServicePrincipalName = "ff281ffe-705c-4f53-9f37-a40e6f2c68f3",
+		[string]$environmentName = "AzureCloud",
+		[string]$location = "East US",
+		[string]$recoveryServicesAADServicePrincipalName = "c1fe8102-c462-4f9f-b73b-afa60a9ea38b",
 		[Parameter(Mandatory=$true)]
 		[string]$subscriptionId,
 		[Parameter(Mandatory=$true)]
