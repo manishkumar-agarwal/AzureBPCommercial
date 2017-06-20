@@ -122,8 +122,8 @@
 
       "omsWorkspaceRegion": {
         "type": "string",
-        "defaultValue": "East US 2",
-        "allowedValues": [ "USGov Virginia", "East US 2", "West Europe", "Southeast Asia", "Australia Southeast" ],
+        "defaultValue": "East US",
+        "allowedValues": [ "USGov Virginia", "East US", "West Europe", "Southeast Asia", "Australia Southeast" ],
         "metadata": {
           "description": "Specify the region for your Workspace"
         }
